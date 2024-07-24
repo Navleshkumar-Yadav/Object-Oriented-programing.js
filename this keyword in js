@@ -1,0 +1,30 @@
+this keyword in js
+ call site
+let obj = {
+
+    x: 20,
+    y: 30,
+    z :{
+        x : 100,
+        y : 2000,
+        fn: function(){
+            console.log(this.x, this.y);
+    
+        }
+
+    }
+   
+
+}
+obj.z.fn();
+ 
+
+let obj1 ={
+    A: 54,
+    B: 55,
+    fn: ()=>{
+        console.log(this.A , this.B);
+    }
+   
+}
+obj1.fn();
